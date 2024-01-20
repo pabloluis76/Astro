@@ -1,0 +1,92 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<section
+    class={`
+    w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+    `}
+>
+    <BentoItem
+        class="col-span-10 md:col-span-4"
+        title="ANDORRA: EL CÉNIT DE LOS PREMIOS ESLAND"
+    >
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+            h-full group-hover:scale-110 transition-scale duration-1000
+            ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover
+            bg-no-repeat bg-blue-950 -z-10"
+            style="background-image: url('/mountain.webp')"
+        >
+        </div>
+        <p slot="content" class="max-w-xl text-base md:text-l">
+            Una nueva edición <strong>cargada de novedades</strong> y contenido,
+            que empezará varias semanas antes de la ansiada gala. <strong
+                >Directos especiales, colaboraciones, conciertos y mucho más</strong
+            > en lo que será una auténtica fiesta dedicada a la creación de contenido.
+        </p>
+    </BentoItem>
+    <BentoItem
+        class="col-span-10 md:col-span-6"
+        title="LA ALFOMBRA BLANCA"
+        subtitle="16 de febrero de 2024"
+    >
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+            h-full group-hover:scale-110 transition-scale duration-1000
+            ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover
+            bg-no-repeat bg-blue-800 -z-10"
+            style="background-image: url('/gref.webp')"
+        >
+        </div>
+        <p slot="content" class="max-w-xl text-base md:text-l">
+            Una nueva edición <strong>cargada de novedades</strong> y contenido,
+            que empezará varias semanas antes de la ansiada gala. <strong
+                >Directos especiales, colaboraciones, conciertos y mucho más</strong
+            > en lo que será una auténtica fiesta dedicada a la creación de contenido.
+        </p>
+    </BentoItem>
+    <BentoItem
+        class="col-span-10 md:col-span-6"
+        title="LA GALA"
+        subtitle="17 de febrero de 2024"
+    >
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+            h-full group-hover:scale-110 transition-scale duration-1000
+            ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover
+            bg-no-repeat bg-blue-950 -z-10"
+            style="background-image: url('/pistas.webp')"
+        >
+        </div>
+        <p slot="content" class="max-w-xl text-base md:text-l">
+            Una nueva edición <strong>cargada de novedades</strong> y contenido,
+            que empezará varias semanas antes de la ansiada gala. <strong
+                >Directos especiales, colaboraciones, conciertos y mucho más</strong
+            > en lo que será una auténtica fiesta dedicada a la creación de contenido.
+        </p>
+    </BentoItem>
+    <BentoItem
+        class="col-span-10 md:col-span-4"
+        title="DISFRUTA DEL REDDIT DE LA COMUNIDAD"
+    >
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+            h-full group-hover:scale-110 transition-scale duration-1000
+            ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover
+            bg-no-repeat bg-blue-950 -z-10"
+            style="background-image: url('/laptop_esland.webp')"
+        >
+        </div>
+        <p slot="content" class="max-w-xl text-base md:text-l">
+            Únete a la comunidad de Estand y comparte tus opiniones, memes y
+            momentos favoritos. <strong>¡No te pierdas nada!</strong>
+        </p>
+    </BentoItem>
+</section>
